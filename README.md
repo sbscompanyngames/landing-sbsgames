@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Landing SBS Games
 
-## Getting Started
+**Nota:** Este proyecto se encuentra obsoleto y ya no está en mantenimiento.
 
-First, run the development server:
+Este proyecto es una landing page desarrollada con Next.js, diseñada para promocionar los juegos de SBS Games.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Descripción
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La landing page utiliza Next.js para proporcionar una experiencia de usuario rápida y optimizada. Incluye secciones informativas y visuales, además de un diseño moderno y atractivo gracias a Tailwind CSS y Swiper.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Requisitos
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Asegúrate de tener instalado Node.js en tu máquina. Se recomienda usar la versión 14 o superior.
 
-## Learn More
+## Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona el repositorio:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/tu-usuario/landing-sbsgames.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Navega al directorio del proyecto:
 
-## Deploy on Vercel
+   ```bash
+   cd landing-sbsgames
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Instala las dependencias:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   npm install
+   ```
+
+## Scripts
+
+Aquí hay una descripción de los scripts disponibles en este proyecto:
+
+- `dev`: Inicia el servidor de desarrollo de Next.js.
+  
+  ```bash
+  npm run dev
+  ```
+
+- `build`: Compila el proyecto para producción.
+  
+  ```bash
+  npm run build
+  ```
+
+- `start`: Inicia el servidor en producción.
+  
+  ```bash
+  npm run start
+  ```
+
+- `lint`: Ejecuta ESLint para comprobar errores de estilo en el código.
+  
+  ```bash
+  npm run lint
+  ```
+
+## Dependencias
+
+- **Next.js**: Framework de React para construir aplicaciones web optimizadas.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Swiper**: Biblioteca para crear carruseles y deslizadores de contenido.
+- **js-cookie**: Para gestionar cookies en el navegador.
+
+### DevDependencias
+
+- **Tailwind CSS**: Framework de CSS para un diseño moderno y personalizable.
+- **PostCSS**: Herramienta para transformar CSS.
+- **Autoprefixer**: Plugin de PostCSS que añade prefijos para compatibilidad con navegadores.
