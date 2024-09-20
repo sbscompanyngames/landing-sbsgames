@@ -1,0 +1,29 @@
+.link {
+  transition: transform 0.2s ease;
+}
+
+.link:hover {
+  transform: scale(1.08);
+}
+
+.btnsIOS {
+  width: 210px;
+  min-width: 210px;
+}
+
+.googleplay {
+  margin-bottom: 10px;
+}
+
+@media (width < 550px) {
+  .btnsIOS {
+    width: 200px;
+    min-width: 160px;
+  }
+}
+
+@media (width < 750px) {
+  .link:hover {
+    transform: none;
+  }
+}

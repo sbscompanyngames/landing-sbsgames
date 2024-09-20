@@ -1,0 +1,34 @@
+.containerRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.btnred {
+  max-width: fit-content;
+  transition: transform 0.2s ease;
+}
+
+.btnred:hover {
+  transform: scale(1.15);
+}
+
+.containerRedesRow {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.btnTik {
+  position: relative;
+}
+
+@media (width < 750px) {
+  .btnred:hover {
+    transform: none;
+  }
+}

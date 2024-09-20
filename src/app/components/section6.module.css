@@ -1,0 +1,215 @@
+.containerAll {
+  width: 100%;
+  padding-inline: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.containerLogo {
+  max-width: 1300px;
+  max-height: 170px;
+  width: 100%;
+  display: flex;
+  background-color: #8638e5;
+  gap: 50px;
+  padding: 40px 50px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 30px;
+  padding-right: 70px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.18);
+}
+
+.containerPalabras {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3.15px;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.yellow {
+  color: #ffbf4b;
+}
+
+.blue {
+  color: #3fb4ff;
+}
+
+.red {
+  color: #df0e33;
+}
+
+.containerRedes {
+  display: flex;
+  justify-content: center;
+}
+
+.containerRedesNone {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (width < 1360px) {
+  .logo {
+    width: 270px;
+  }
+  .containerLogo {
+    padding-inline: 70px;
+  }
+}
+
+@media (width < 1270px) {
+  .logo {
+    width: 230px;
+  }
+  .containerLogo {
+    max-height: 120px;
+  }
+}
+
+@media (width < 1100px) {
+  .logo {
+    width: 200px;
+  }
+  .containerLogo {
+    max-height: 110px;
+  }
+}
+
+@media (width < 1000px) {
+  .logo {
+    width: 190px;
+  }
+  .containerLogo {
+    max-height: 100px;
+  }
+}
+
+@media (width < 950px) {
+  .logo {
+    width: 220px;
+  }
+
+  .bg {
+    background-color: #8638e5;
+    padding: 30px 70px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: transform 0.25s ease;
+  }
+
+  .bg2 {
+    padding: 0 70px;
+    height: 130px;
+    margin: 10px 0;
+  }
+
+  .containerLogo {
+    flex-direction: column;
+    max-height: none;
+    background-color: transparent;
+    justify-content: center;
+    margin: 0;
+    gap: 25px;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .containerPalabras {
+    margin-bottom: 30px;
+    font-size: 38px;
+  }
+}
+
+@media (width < 630px) {
+  .containerPalabras {
+    font-size: 32px;
+  }
+  .containerRedes {
+    display: none;
+  }
+  .containerRedesNone {
+    display: flex;
+  }
+
+  .bg {
+    background-color: #8638e5;
+    padding: 30px 70px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+  }
+}
+
+@media (width < 540px) {
+  .containerPalabras {
+    font-size: 28px;
+  }
+}
+
+@media (width < 500px) {
+  .containerPalabras {
+    font-size: 26px;
+  }
+  .containerAll {
+    padding-inline: 50px;
+  }
+}
+
+@media (width < 500px) {
+  .bg2 {
+    padding: 0 70px;
+    height: 110px;
+    margin: 10px 0;
+  }
+  .logoGames {
+    min-height: 140px;
+  }
+}
+
+@media (width < 450px) {
+  .containerPalabras {
+    font-size: 25px;
+  }
+
+  .logoGames {
+    min-width: 170px;
+  }
+}
+
+@media (width < 415px) {
+  .containerPalabras {
+    font-size: 23px;
+  }
+}
+/* 
+@media (width < 400px) {
+  .containerPalabras {
+    font-size: 22px;
+  }
+} */

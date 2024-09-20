@@ -1,0 +1,126 @@
+.mainContainer {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory !important;
+  scroll-behavior: smooth !important;
+  background-image: url("../../../../public/bg1.webp");
+  background-size: cover;
+}
+
+.sectionPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.articlePage {
+  width: 92%;
+  max-width: 1700px;
+  background-color: rgba(128, 128, 128, 0.765);
+}
+
+@media (width < 450px) {
+  .mainContainer {
+    background-image: none;
+  }
+  .articlePage {
+    width: 100%;
+  }
+  .articleHome {
+    width: 100%;
+  }
+}
+
+.articleHome {
+  background-color: transparent;
+}
+
+.sectionPageNav {
+  min-height: none;
+  height: fit-content;
+  background-size: cover;
+}
+
+.articlePageNav {
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  min-height: none !important;
+}
+
+.section2 {
+  background-image: url("../../../../public/bg2.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+.section4 {
+  background-image: url("../../../../public/bg2.webp");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.article4 {
+  min-height: 100vh !important;
+}
+
+.article5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section6 {
+  background-image: url("../../../../public/bg2.webp");
+  background-size: cover;
+}
+
+.article6 {
+  background-image: url(".././../../../public/bgsbsgames.webp");
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.article7 {
+  background-color: transparent;
+}
+
+@media (width < 440px) {
+  .articlePageNav {
+    width: 95%;
+  }
+}
+
+@media (width < 375px) {
+  .articleHome {
+    width: 100%;
+  }
+  .articlePageNav {
+    width: 100%;
+  }
+}
+
+@media (width < 465px) {
+  .article2 {
+    height: 1400px;
+  }
+}
+
+@media (width < 1600px) {
+  .mainContainer {
+    scroll-snap-type: none !important;
+    scroll-snap-type: none !important;
+    scroll-behavior: none !important;
+  }
+}
+
+.containerCookies {
+  display: none;
+}

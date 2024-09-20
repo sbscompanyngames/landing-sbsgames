@@ -1,0 +1,166 @@
+.containerAll {
+  z-index: 100;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 70px;
+}
+
+.content {
+  max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 60px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.imgCookie {
+  min-width: 70px;
+  min-height: 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.contImage {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.btn {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: linear-gradient(286deg, #8638e5 13.93%, #1e063e 108.48%);
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+  min-width: 100px;
+  transition: transform 0.2s ease;
+  text-transform: capitalize;
+}
+
+.btn2 {
+  background: linear-gradient(286deg, #42374f 13.93%, #372948 108.48%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+  min-width: 100px;
+  transition: transform 0.2s ease;
+  text-transform: capitalize;
+}
+
+.btn2:hover {
+  transform: scale(1.08);
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+.description {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.link {
+  color: #8638e5;
+  text-decoration: underline;
+}
+
+@media (width < 800px) {
+  .containerBtn {
+    gap: 30px;
+    width: fit-content;
+  }
+}
+
+@media (width < 695px) {
+  .containerBtn {
+    gap: 20px;
+    width: fit-content;
+  }
+  .containerAll {
+    padding-inline: 40px;
+  }
+}
+
+@media (width < 695px) {
+  .containerBtn {
+    gap: 20px;
+    width: fit-content;
+  }
+  .containerAll {
+    padding-inline: 40px;
+  }
+}
+
+@media (width < 615px) {
+  .containerBtn {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn,
+  .btn2 {
+    width: 100%;
+  }
+
+  .containerAll {
+    bottom: 50px;
+    width: 100vw;
+    bottom: 40px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media (width < 490px) {
+  .containerAll {
+    padding-inline: 30px;
+  }
+  .content {
+    padding-inline: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}

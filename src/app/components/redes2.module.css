@@ -1,0 +1,21 @@
+.containerRedes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btnred {
+  max-width: fit-content;
+  transition: transform 0.2s ease;
+  width: 40px;
+}
+
+.btnred:hover {
+  transform: scale(1.15);
+}
+
+.containerRedesRow {
+  flex-direction: row;
+  margin: 0;
+}

@@ -1,0 +1,28 @@
+.buttonCta {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff0340 0%, #7d132d 100%);
+  padding: 15px 15px;
+  height: fit-content;
+  text-transform: uppercase;
+  max-width: fit-content;
+  min-width: fit-content;
+  min-height: fit-content;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btnHover {
+  transition: transform 0.1s ease;
+}
+
+.btnHover:hover {
+  transform: scale(1.05);
+}
+@media (width < 750px) {
+  .btnHover:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,131 @@
+.containerAll {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  position: relative;
+  background: rgb(237, 223, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(237, 223, 255, 1) 0%,
+    rgba(222, 234, 255, 1) 100%
+  );
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.hello {
+  font-size: 54px;
+  font-weight: 700;
+  width: fit-content;
+  color: #0050c9;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: 400;
+  width: fit-content;
+}
+
+.containerFormText {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.paragraph {
+  font-size: 24px;
+  font-weight: 400;
+  min-width: 300px;
+  max-width: 470px;
+  color: rgba(0, 0, 0, 0.649);
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: #e2e2f5;
+  border: 2px solid rgba(0, 0, 0, 0.122);
+  border-radius: 10px;
+  max-height: 920px;
+  min-width: 400px;
+  width: 100%;
+}
+
+.inp {
+  font-size: 28px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #9a57ec;
+}
+
+.inp::placeholder {
+  color: rgba(0, 0, 0, 0.671);
+}
+
+.texta {
+  min-height: 250px;
+  resize: none;
+}
+
+.btnSend {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  padding: 5px 25px;
+  background: linear-gradient(286deg, #8638e5 13.93%, #1e063e 108.48%);
+  border-radius: 3px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  width: 900px;
+}
+
+.emogiIcon {
+  display: inline;
+}
+
+@media (width < 1070px) {
+  .containerFormText {
+    flex-direction: column;
+  }
+  .paragraph {
+    width: 100%;
+    max-width: none;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (width < 700px) {
+  .containerAll {
+    padding-inline: 40px;
+  }
+}
+
+@media (width < 520px) {
+  .containerForm {
+    min-width: 0;
+  }
+}
+
+@media (width < 400px) {
+  .containerAll {
+    padding-inline: 30px;
+  }
+}

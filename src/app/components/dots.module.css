@@ -1,0 +1,46 @@
+.containerDots {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.dot {    
+  width: 11px;
+  height: 11px;
+  background-color: #74747c;
+  border-radius: 50%;
+}
+
+.actualDot {
+  width: 30px;
+  height: 10px;
+  background-color: #ff0340;
+  border-radius: 10px;
+}
+
+@media (width < 800px) {
+  .containerDots {
+    display: none;
+  }
+}
+
+
+@media (width < 1575px) {
+
+  .containerDots{
+    bottom: 60px;
+    
+  }
+}
+
+@media (width < 1110px) {
+
+  .containerDots{
+    bottom: 40px;
+    
+  }
+}
+
+

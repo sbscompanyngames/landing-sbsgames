@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.containerCarousel {
+  min-height: 500px !important;
+  background-image: url("../../../public//carouselsection.webp");
+  background-size: cover;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+.mySwiper {
+  height: 500px;
+}
+
+.swiperCont {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swiper-button-next {
+  background-color: white !important;
+}
+
+.spaceNav {
+  width: 180px;
+  cursor: pointer;
+}
+
+.prev {
+  background-color: #1e063e;
+  background-color: transparent;
+  width: 100px;
+  height: 75px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.prev div {
+  background: linear-gradient(286deg, #8638e5 13.93%, #1e063e 108.48%);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.839);
+}
+
+.next {
+  background-color: #1e063e;
+  background-color: transparent;
+  width: 100px;
+  height: 75px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -3px;
+}
+
+.next div {
+  background: linear-gradient(286deg, #8638e5 13.93%, #1e063e 108.48%);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.839);
+}
+
+@media (width < 1500px) {
+  .next {
+    right: 0px;
+  }
+}
+
+@media (width < 900px) {
+  .prev {
+    width: 0;
+    left: 45px;
+  }
+  .next {
+    width: 0;
+    right: 0px;
+  }
+}
+
+@media (width < 770px) {
+  .prev {
+    width: 100px;
+    left: 0;
+  }
+  .next {
+    width: 100px;
+    right: 0;
+  }
+}
+
+@media (width < 560px) {
+  .prev {
+    width: 0;
+    left: 55px;
+    z-index: 5;
+  }
+  .next {
+    width: 0;
+    right: 30px;
+    z-index: 5;
+  }
+}
+
+@media (width < 450px) {
+  .containerCarousel {
+    align-items: flex-start !important;
+    padding-top: 35px;
+    padding-bottom: 85px;
+  }
+  .prev {
+    position: absolute;
+    bottom: 25px;
+    left: 40%;
+  }
+
+  .next {
+    position: absolute;
+    bottom: 25px;
+    right: 40%;
+  }
+  .prev div {
+    height: 50px;
+    width: 50px;
+  }
+  .next div {
+    height: 50px;
+    width: 50px;
+  }
+}

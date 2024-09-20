@@ -1,0 +1,134 @@
+.contAll {
+  min-height: 100vh;
+  background: rgb(237, 223, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(237, 223, 255, 1) 0%,
+    rgba(222, 234, 255, 1) 100%
+  );
+  position: relative;
+  height: fit-content;
+  padding-bottom: 50px;
+}
+
+.containerRedes {
+  align-self: flex-start;
+  display: inline;
+}
+
+.containerHeader {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 45px;
+  padding-inline: 150px;
+  padding-top: 50px;
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.66px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.containerDescription {
+  display: flex;
+  gap: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.parrafo {
+  text-wrap: balance;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline;
+}
+
+.containerCards {
+  min-height: 500px;
+  background-image: url("../../../public/carouselsection.webp"); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerDots {
+  position: relative;
+}
+
+.containerRedes2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media (width < 1215px) {
+  .containerHeader {
+    padding-inline: 100px;
+  }
+  .containerRedes {
+    position: relative;
+    top: -15px;
+  }
+}
+
+@media (width < 1100px) {
+  .containerHeader {
+    padding-inline: 50px;
+  }
+
+  .containerDescription {
+    flex-direction: column;
+  }
+
+  .contAll {
+    padding-bottom: 80px;
+  }
+}
+
+@media (width < 650px) {
+  .containerRedes {
+    display: none;
+  }
+
+  .containerRedes2 {
+    display: flex;
+  }
+
+  .containerHeader {
+    margin-bottom: 20px;
+  }
+}
+
+@media (width < 450px) {
+  .contAll {
+    padding-bottom: 0;
+  }
+  .containerHeader {
+    padding-inline: 30px;
+  }
+}
